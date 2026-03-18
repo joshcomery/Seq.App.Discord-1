@@ -116,6 +116,10 @@ public class DiscordApp : SeqApp, ISubscribeToAsync<LogEventData>
 
     private static WebhookMessage CreateMessage(Event<LogEventData> @event, Settings settings)
     {
+
+        string message = @event.Data.RenderedMessage;
+        if (message.Length >= 2990)
+            message = message.Substring(0, 2990) + "...";
         return new WebhookMessage
         {
             UserName = settings.Username,
@@ -127,7 +131,7 @@ public class DiscordApp : SeqApp, ISubscribeToAsync<LogEventData>
                 {
                     Title = GetTitle(@event.Data, settings.TitlePropertyName),
                     Url = string.Format("{0}/#/events?filter=@Id%20%3D%3D%20%22{1}%22&show=expanded", settings.SeqBaseUrl, @event.Id ),
-                    Description = @event.Data.RenderedMessage,
+                    Description = message,
                     Color = levelColorMap[@event.Data.Level],
                     Timestamp = @event.Timestamp.ToString("yyyy-MM-ddTHH:mm:ss.fffZ")
                 }
