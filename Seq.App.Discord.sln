@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Seq.App.Discord.SixSided", "src\Seq.App.Discord\Seq.App.Discord.SixSided.csproj", "{90B02D98-6AD8-4385-846A-00896658FC16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Seq.App.Discord.Josh", "src\Seq.App.Discord\Seq.App.Discord.Josh.csproj", "{90B02D98-6AD8-4385-846A-00896658FC16}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sln", "sln", "{9777B9DC-4110-4048-A2FF-E822965E666C}"
 	ProjectSection(SolutionItems) = preProject

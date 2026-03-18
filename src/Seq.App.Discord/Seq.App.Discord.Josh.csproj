@@ -3,23 +3,28 @@
 		<TargetFramework>net8.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-		<VersionPrefix>1.0.3</VersionPrefix>
+		<VersionPrefix>1.0.5</VersionPrefix>
 	</PropertyGroup>
 
 	<PropertyGroup>
 		<Description>An app for Seq (http://getseq.net) that forwards messages to Discord.</Description>
 		<PackageId>$(AssemblyName)</PackageId>
-		<Authors>Alexey Galkin, Six-SidedSoftware</Authors>
-		<PackageReleaseNotes>see: https://github.com/ConnerOrth/Seq.App.Discord for changes</PackageReleaseNotes>
+		<Authors>Alexey Galkin, Six-SidedSoftware, Josh Comery</Authors>
+		<PackageReleaseNotes>see: https://github.com/joshcomery/Seq.App.Discord-1 for changes</PackageReleaseNotes>
 		<PackageTags>seq-app;seq;serilog;event;discord</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<Title>Seq.App.Discord.SixSided</Title>
-		<PackageProjectUrl>https://github.com/ConnerOrth/Seq.App.Discord</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/ConnerOrth/Seq.App.Discord</RepositoryUrl>
-		<Product>Seq.App.Discord.SixSided</Product>
+		<Title>Seq.App.Discord.Josh</Title>
+		<PackageProjectUrl>https://github.com/joshcomery/Seq.App.Discord-1</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/joshcomery/Seq.App.Discord-1</RepositoryUrl>
+		<Product>Seq.App.Discord.Josh</Product>
 		<Copyright>Copyright © 2017</Copyright>
 		<PackageIcon>seq-app-discord.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<IncludeSymbols>False</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<Version>$(VersionPrefix)</Version>
+		<FileVersion>1.0.5</FileVersion>
+		<AssemblyVersion>1.0.5</AssemblyVersion>
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="Seq.Apps" Version="2023.4.0" />
